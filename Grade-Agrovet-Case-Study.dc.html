@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:80px;}
+  body{margin:0; background:#0b0b0c; -webkit-font-smoothing:antialiased;}
+  a{color:inherit; text-decoration:none;}
+</style>
+</helmet>
+
+<div style="background:#0b0b0c; color:#f4f4f0; font-family:'Space Grotesk',-apple-system,sans-serif; min-height:100vh; overflow-x:clip;">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:sticky; top:0; z-index:50; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); background:rgba(11,11,12,0.72); border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:920px; margin:0 auto; padding:15px clamp(20px,5vw,48px); display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <a href="index.html" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; letter-spacing:0.04em; display:flex; align-items:center; gap:9px;"><span style="width:8px; height:8px; background:#5b8cff; display:inline-block;"></span>DAN&nbsp;KIBET</a>
+      <a href="index.html#work" style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; color:#9a9a91; text-transform:uppercase;" style-hover="color:#5b8cff;">← All work</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header style="max-width:920px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,5vw,48px) clamp(28px,4vw,44px);">
+    <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.18em; color:#5b8cff; margin-bottom:20px;">CASE STUDY / 01</div>
+    <h1 style="font-size:clamp(40px,8vw,76px); font-weight:700; letter-spacing:-0.04em; line-height:0.95; margin:0 0 20px; text-transform:uppercase;">Grade Agrovet</h1>
+    <p style="font-size:clamp(16px,2.2vw,21px); line-height:1.45; color:#b8b8b0; max-width:620px; margin:0 0 clamp(30px,4vw,44px);">Production POS, inventory, and finance platform for a Kenyan agribusiness.</p>
+
+    <div style="display:flex; flex-wrap:wrap; gap:24px 40px; padding:20px 0; border-top:2px solid #ededed; border-bottom:1px solid rgba(255,255,255,0.14); font-family:'JetBrains Mono',monospace;">
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">YEAR</div><div style="font-size:14px; color:#e8e6e0;">2025</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">CLIENT</div><div style="font-size:14px; color:#e8e6e0;">Grade Agrovet Ltd, Kenya</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">ROLE</div><div style="font-size:14px; color:#e8e6e0;">Full-stack developer · sole engineer</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">STATUS</div><div style="font-size:14px; color:#e8e6e0; display:flex; align-items:center; gap:8px;"><span style="width:7px; height:7px; border-radius:50%; background:#4ade80; box-shadow:0 0 8px #4ade80;"></span>Live · In production</div></div>
+    </div>
+  </header>
+
+  <!-- ============ HERO IMAGE ============ -->
+  <div style="max-width:920px; margin:0 auto; padding:0 clamp(20px,5vw,48px) clamp(40px,6vw,64px);">
+    <img src="screenshots/Grade agrovet screenshot.png" alt="Grade Agrovet dashboard screenshot" style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); display:block;">
+  </div>
+
+  <!-- ============ BODY ============ -->
+  <main style="max-width:920px; margin:0 auto; padding:0 clamp(20px,5vw,48px) clamp(20px,4vw,40px);">
+
+    <!-- THE PROBLEM -->
+    <section style="padding-bottom:clamp(40px,6vw,60px);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 01</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">The problem</h2>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 16px; max-width:700px;">Small and mid-size agribusinesses in Kenya rely on manual ledgers and disconnected tools for inventory tracking, sales, and accounting. Stock discrepancies are common, financial reporting lags by weeks, and there is no real-time visibility into which products are moving or which customers are profitable.</p>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 22px; max-width:700px;">Grade Agrovet needed a single platform to replace its existing patchwork of Excel sheets, paper receipt books, and phone-based credit tracking. Specifically, it needed to:</p>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Track stock movements across multiple product categories in real time</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Handle point-of-sale transactions with multiple payment methods (cash, M-Pesa, credit)</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Manage credit customers and accounts receivable with aging reports</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Generate financial reports for owners and the accountant</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Support multiple user roles with appropriate access control and audit trails</span></div>
+      </div>
+    </section>
+
+    <!-- THE APPROACH -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 02</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">The approach</h2>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 16px; max-width:700px;">I built Grade Agrovet as a <span style="color:#f4f4f0;">modular monolith</span>. The frontend is a Next.js + TypeScript application; the backend is a Flask + Python REST API; the database is a Supabase-managed PostgreSQL instance with Row-Level Security policies on every sensitive table.</p>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0; max-width:700px;">The system is organized into discrete modules (inventory, POS, production, finance), each with its own routes, controllers, and schemas, but sharing common authentication and audit infrastructure. This is deliberately not a microservices architecture. For a solo developer working with a single client, a modular monolith is faster to ship, cheaper to host, and easier to debug.</p>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 03</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Key features</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Real-time inventory tracking with low-stock alerts</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Point-of-sale with cash, M-Pesa (Daraja API integration planned), and credit payment methods</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Credit customer management with aging reports and statements</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Role-based access control across four roles: Admin, Manager, Cashier, Accountant</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Audit logs for every financial transaction and stock movement</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Financial reports: P&amp;L, cash flow, trial balance, top customers, top products</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Production tracking for value-added products</span></div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL HIGHLIGHTS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 04</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Technical highlights</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Row-Level Security enforced at the database layer on every sensitive table; auth is not just a frontend concern</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Server-side data fetching with Next.js Server Components, minimizing client-side JS shipped</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Optimistic UI updates on POS to keep the cashier flow fast under unreliable connectivity</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Background jobs handled via a Render worker process</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Full security audit covering 12 specific findings: N+1 query patterns, missing pagination, missing rate limits, RLS gaps, input validation</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Migration of the entire system from Railway to Supabase + Render with zero downtime</span></div>
+      </div>
+    </section>
+
+    <!-- CHALLENGES & SOLUTIONS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 05</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 26px;">Challenges &amp; solutions</h2>
+      <div style="max-width:700px;">
+        <div style="margin-bottom:26px; padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">Migration 403 errors.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">During the Railway-to-Supabase migration, previously working endpoints returned 403 Forbidden. The error code by itself was misleading. The fix came from reading the response body, which revealed that <span style="font-family:'JetBrains Mono',monospace; font-size:13.5px; color:#e8e6e0;">pg_dump --no-acl</span> had stripped the GRANT permissions from the dumped schema. Re-running schema GRANT statements after the import restored access immediately. I now treat the response body as the first thing to check on any 403, not the status code.</p>
+        </div>
+        <div style="margin-bottom:26px; padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">POS speed under poor connectivity.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">Cashiers needed the system to feel instant even when the connection dropped to 2G or worse. I used optimistic UI updates so that scanning an item and adding it to a sale showed immediately; a background sync confirmed the database write. Clear UI states made it obvious when a transaction was pending versus confirmed.</p>
+        </div>
+        <div style="padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">Audit completeness without slowing down writes.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">Logging every financial movement could have doubled write latency. I moved audit-log writes into PostgreSQL triggers on the relevant tables, so the application layer doesn't need to remember to log, and the writes happen in the same transaction as the original action.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 06</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Outcomes</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.12); max-width:760px;">
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(26px,3.5vw,34px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">Live</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">Serving daily operations at Grade Agrovet.</p></div>
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(26px,3.5vw,34px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">3 → 1</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">Replaced the Excel ledger, paper receipt books and phone-based credit tracking with one platform.</p></div>
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(26px,3.5vw,34px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">~80%</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">Estimated reduction in end-of-day reconciliation time.</p></div>
+      </div>
+    </section>
+
+    <!-- LESSONS LEARNED -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 07</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Lessons learned</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">For Kenyan SMBs, M-Pesa integration is not a "nice-to-have"; it's the baseline expectation from day one.</span></div>
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">A modular monolith beats microservices for solo dev teams. Almost always.</span></div>
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">Always check the response body on a 4xx error. The status code is often a lie about what actually went wrong.</span></div>
+      </div>
+    </section>
+
+    <!-- STACK + LINKS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; flex-wrap:wrap; gap:clamp(34px,5vw,64px);">
+      <div style="flex:1 1 360px; min-width:280px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:18px;">§ 08 / TECH STACK</div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">FRONTEND</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Next.js 14</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">TypeScript</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Tailwind CSS</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">BACKEND</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Flask</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Python</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">REST APIs</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">DATABASE</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Supabase</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">PostgreSQL</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Row-Level Security</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">INFRASTRUCTURE</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Render</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Vercel</span></div></div>
+        </div>
+      </div>
+      <div style="flex:1 1 220px; min-width:220px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:18px;">LINKS</div>
+        <a href="https://gradeagrovet.vercel.app/" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:space-between; gap:12px; background:#5b8cff; color:#0b0b0c; font-weight:600; font-size:14px; padding:13px 18px; border-radius:2px; margin-bottom:12px;" style-hover="background:#7da2ff;"><span>Visit live site</span><span>↗</span></a>
+        <a href="https://github.com/Mr-Dan-kibet/grade_agrovet" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:space-between; gap:12px; border:1px solid rgba(255,255,255,0.14); color:#d8d8d2; font-family:'JetBrains Mono',monospace; font-size:13px; padding:12px 18px; border-radius:2px;" style-hover="border-color:#5b8cff;"><span>GitHub</span><span>↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ NEXT / FOOTER ============ -->
+  <div style="border-top:2px solid #ededed;">
+    <a href="Kapgrade-Smart-Dairy-Case-Study.dc.html" style="display:block;" style-hover="background:rgba(255,255,255,0.02);">
+      <div style="max-width:920px; margin:0 auto; padding:clamp(36px,5vw,56px) clamp(20px,5vw,48px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:8px;">NEXT PROJECT →</div>
+          <div style="font-size:clamp(26px,4vw,38px); font-weight:700; letter-spacing:-0.03em; text-transform:uppercase;">Kapgrade Smart Dairy</div>
+        </div>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#5b8cff;">View →</span>
+      </div>
+    </a>
+  </div>
+
+  <footer style="max-width:920px; margin:0 auto; padding:24px clamp(20px,5vw,48px) 44px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.06em; color:#6a6a62; border-top:1px solid rgba(255,255,255,0.08);">
+    <a href="index.html" style-hover="color:#5b8cff;">← Back to home</a>
+    <span>© 2026 DAN KIBET</span>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

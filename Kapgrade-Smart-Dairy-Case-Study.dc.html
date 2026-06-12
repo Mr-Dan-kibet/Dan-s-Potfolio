@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:80px;}
+  body{margin:0; background:#0b0b0c; -webkit-font-smoothing:antialiased;}
+  a{color:inherit; text-decoration:none;}
+</style>
+</helmet>
+
+<div style="background:#0b0b0c; color:#f4f4f0; font-family:'Space Grotesk',-apple-system,sans-serif; min-height:100vh; overflow-x:clip;">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:sticky; top:0; z-index:50; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); background:rgba(11,11,12,0.72); border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:920px; margin:0 auto; padding:15px clamp(20px,5vw,48px); display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <a href="index.html" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; letter-spacing:0.04em; display:flex; align-items:center; gap:9px;"><span style="width:8px; height:8px; background:#5b8cff; display:inline-block;"></span>DAN&nbsp;KIBET</a>
+      <a href="index.html#work" style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; color:#9a9a91; text-transform:uppercase;" style-hover="color:#5b8cff;">← All work</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header style="max-width:920px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,5vw,48px) clamp(28px,4vw,44px);">
+    <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.18em; color:#5b8cff; margin-bottom:20px;">CASE STUDY / 02</div>
+    <h1 style="font-size:clamp(38px,7.4vw,70px); font-weight:700; letter-spacing:-0.04em; line-height:0.95; margin:0 0 20px; text-transform:uppercase;">Smart Dairy</h1>
+    <p style="font-size:clamp(16px,2.2vw,21px); line-height:1.45; color:#b8b8b0; max-width:640px; margin:0 0 clamp(30px,4vw,44px);">End-to-end dairy farm management with lactation modeling and estrus detection.</p>
+
+    <div style="display:flex; flex-wrap:wrap; gap:24px 40px; padding:20px 0; border-top:2px solid #ededed; border-bottom:1px solid rgba(255,255,255,0.14); font-family:'JetBrains Mono',monospace;">
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">YEAR</div><div style="font-size:14px; color:#e8e6e0;">2025</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">CLIENT</div><div style="font-size:14px; color:#e8e6e0;">Kapgrade Dairy Farm, Kenya</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">ROLE</div><div style="font-size:14px; color:#e8e6e0;">Full-stack developer · sole engineer</div></div>
+      <div><div style="font-size:10px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:7px;">STATUS</div><div style="font-size:14px; color:#e8e6e0; display:flex; align-items:center; gap:8px;"><span style="width:7px; height:7px; border-radius:50%; background:#4ade80; box-shadow:0 0 8px #4ade80;"></span>Live · In production</div></div>
+    </div>
+  </header>
+
+  <!-- ============ HERO IMAGE ============ -->
+  <div style="max-width:920px; margin:0 auto; padding:0 clamp(20px,5vw,48px) clamp(40px,6vw,64px);">
+    <img src="screenshots/Smart dairy screenshot.png" alt="Kapgrade Smart Dairy dashboard screenshot" style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); display:block;">
+  </div>
+
+  <!-- ============ BODY ============ -->
+  <main style="max-width:920px; margin:0 auto; padding:0 clamp(20px,5vw,48px) clamp(20px,4vw,40px);">
+
+    <!-- THE PROBLEM -->
+    <section style="padding-bottom:clamp(40px,6vw,60px);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 01</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">The problem</h2>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 16px; max-width:700px;">Modern dairy farming demands precise tracking of each cow's reproductive cycle, milk yield, health events, and feeding regimen. Most Kenyan dairy operations still rely on paper records, which makes it nearly impossible to spot reproductive issues early, optimize feed efficiency, or model lactation curves to predict yield.</p>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 22px; max-width:700px;">Kapgrade needed a system that treated the individual cow as the central data entity, not the farm or the herd. Every event in a cow's life needed to be tied to that animal, queryable across time, and aggregable into farm-level KPIs. Specifically, it needed to:</p>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Maintain individual cow profiles with full lineage and complete event history</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Detect estrus cycles in real time and alert the farm team for breeding windows</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Model each cow's lactation curve and predict daily yield deviations</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Log milk production twice daily (AM and PM) across the entire herd</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Track health events, breeding events, and feed costs at the cow level</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Surface herd-level KPIs derived from the underlying per-cow data</span></div>
+      </div>
+    </section>
+
+    <!-- THE APPROACH -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 02</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">The approach</h2>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0 0 16px; max-width:700px;">The data model puts <span style="color:#f4f4f0;">each cow at the center</span>. Around each cow sit four event types: reproductive events, health events, milk production records, and feed records. Every other view in the application (the herd dashboard, the morning report, the financial summary) is derived from this base.</p>
+      <p style="font-size:clamp(15px,1.7vw,16.5px); line-height:1.75; color:#c2c2bb; margin:0; max-width:700px;">The interface follows the same logic: the cow's profile page is the primary work surface, with all events for that animal visible on a single timeline. Frontend is Next.js + TypeScript; backend is Flask + Python; database is Supabase-managed PostgreSQL with domain constraints enforced at the database layer rather than the application layer.</p>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 03</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Key features</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Individual cow profiles with full lineage and complete health history</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Estrus detection alerts based on cycle modeling and time since last calving</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Lactation curve fitting per cow, with daily yield prediction and deviation alerts</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">AM/PM milk production logging with a single-tap entry flow</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Health event tracking: calving, illness, vaccination, artificial insemination, deworming</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Feed log with cost-per-liter analysis at both the cow and herd level</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Herd-level dashboard: average yield, conception rate, calving interval</span></div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL HIGHLIGHTS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 04</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Technical highlights</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Lactation curve modeling using Wood's incomplete gamma function, <span style="font-family:'JetBrains Mono',monospace; font-size:13.5px; color:#e8e6e0;">Y(t) = a · t^b · e^(-ct)</span>, fitted per cow per lactation</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Estrus cycle prediction with deviation tracking when cycles run shorter or longer than the standard 21-day baseline</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">PostgreSQL <span style="font-family:'JetBrains Mono',monospace; font-size:13.5px; color:#e8e6e0;">CHECK</span> constraints enforce domain rules at the database layer; for example, no AI event recordable within 50 days post-calving</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Real-time charts via Recharts for yield trends, herd KPIs, and individual lactation curves</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Soft deletes everywhere so historical data is preserved even when a cow leaves the herd</span></div>
+        <div style="display:flex; gap:14px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">›</span><span style="font-size:15.5px; line-height:1.55; color:#c2c2bb;">Server Components by default for fast page loads on rural network conditions</span></div>
+      </div>
+    </section>
+
+    <!-- CHALLENGES & SOLUTIONS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 05</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 26px;">Challenges &amp; solutions</h2>
+      <div style="max-width:700px;">
+        <div style="margin-bottom:26px; padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">Modeling biology with code.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">A cow's lactation curve is not a straight line. It rises sharply post-calving, peaks around six to eight weeks, then declines slowly. Standard linear regression doesn't fit. I used Wood's gamma function with parameters fitted per cow per lactation, which lets the system both predict next-week yield and flag cows whose actual production is deviating from their personal curve.</p>
+        </div>
+        <div style="margin-bottom:26px; padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">Reliable data entry by farm workers.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">The system has to be usable by farm staff entering data each morning, often on a phone, sometimes with cold hands. I built the milk log as a single tap-per-cow flow: select cow, enter AM yield, submit. No multi-step forms, no required fields beyond the yield itself. The friction-to-record gap is what kills paper-replacement projects in agricultural settings.</p>
+        </div>
+        <div style="padding-left:18px; border-left:2px solid rgba(91,140,255,0.45);">
+          <h3 style="font-size:17px; font-weight:600; color:#5b8cff; margin:0 0 9px; letter-spacing:-0.01em;">Enforcing domain rules across teams.</h3>
+          <p style="font-size:15.5px; line-height:1.7; color:#c2c2bb; margin:0;">Different workers handle different events: the milker logs production, the herdsman logs breeding, the vet logs health. Mistakes happen. I moved domain rules (no AI before 50 days post-calving, no calving without a prior pregnancy event, no milk record without an active lactation) into PostgreSQL CHECK constraints. The application layer never has to remember to validate, because the database refuses bad data outright.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 06</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Outcomes</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.12); max-width:760px;">
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(24px,3.2vw,30px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">Live</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">In production at Kapgrade Dairy.</p></div>
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(24px,3.2vw,30px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">Per-cow</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">First system at the farm to give individual animal profitability visibility, replacing herd-level paper averages.</p></div>
+        <div style="background:#0b0b0c; padding:24px;"><div style="font-size:clamp(24px,3.2vw,30px); font-weight:700; color:#5b8cff; letter-spacing:-0.02em; margin-bottom:8px;">Daily use</div><p style="font-size:14px; line-height:1.55; color:#9a9a91; margin:0;">Used every morning by the farm team for milk logging, health events, and breeding decisions.</p></div>
+      </div>
+    </section>
+
+    <!-- LESSONS LEARNED -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:10px;">§ 07</div>
+      <h2 style="font-size:clamp(24px,3.4vw,32px); font-weight:600; letter-spacing:-0.025em; margin:0 0 22px;">Lessons learned</h2>
+      <div style="max-width:700px;">
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">Domain rules belong in the database, not the application layer. They survive every refactor and every new developer.</span></div>
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">When designing for workers in the field, every extra tap is a reason the system gets abandoned. Default to single-action flows.</span></div>
+        <div style="display:flex; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.07);"><span style="color:#5b8cff; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:2px;">→</span><span style="font-size:15.5px; line-height:1.6; color:#c2c2bb;">Mathematical models built for biology need cow-specific parameters, not herd averages. The whole point of the system is to see individuals.</span></div>
+      </div>
+    </section>
+
+    <!-- STACK + LINKS -->
+    <section style="padding:clamp(40px,6vw,60px) 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; flex-wrap:wrap; gap:clamp(34px,5vw,64px);">
+      <div style="flex:1 1 360px; min-width:280px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:18px;">§ 08 / TECH STACK</div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">FRONTEND</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Next.js</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">TypeScript</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Tailwind CSS</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Recharts</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">BACKEND</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Flask</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Python</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">REST APIs</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">DATABASE</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Supabase</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">PostgreSQL</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">CHECK Constraints</span></div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#6a6a62; margin-bottom:9px;">INFRASTRUCTURE</div><div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Render</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b6ad; border:1px solid rgba(255,255,255,0.16); padding:3px 9px;">Vercel</span></div></div>
+        </div>
+      </div>
+      <div style="flex:1 1 220px; min-width:220px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.16em; color:#5b8cff; margin-bottom:18px;">LINKS</div>
+        <a href="https://kapgrade-dairy.vercel.app/" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:space-between; gap:12px; background:#5b8cff; color:#0b0b0c; font-weight:600; font-size:14px; padding:13px 18px; border-radius:2px; margin-bottom:12px;" style-hover="background:#7da2ff;"><span>Visit live site</span><span>↗</span></a>
+        <a href="https://github.com/Mr-Dan-kibet/draft" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:space-between; gap:12px; border:1px solid rgba(255,255,255,0.14); color:#d8d8d2; font-family:'JetBrains Mono',monospace; font-size:13px; padding:12px 18px; border-radius:2px;" style-hover="border-color:#5b8cff;"><span>GitHub</span><span>↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ NEXT / FOOTER ============ -->
+  <div style="border-top:2px solid #ededed;">
+    <a href="MiniTruck-Case-Study.dc.html" style="display:block;" style-hover="background:rgba(255,255,255,0.02);">
+      <div style="max-width:920px; margin:0 auto; padding:clamp(36px,5vw,56px) clamp(20px,5vw,48px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em; color:#6a6a62; margin-bottom:8px;">NEXT PROJECT →</div>
+          <div style="font-size:clamp(26px,4vw,38px); font-weight:700; letter-spacing:-0.03em; text-transform:uppercase;">MiniTruck</div>
+        </div>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#5b8cff;">View →</span>
+      </div>
+    </a>
+  </div>
+
+  <footer style="max-width:920px; margin:0 auto; padding:24px clamp(20px,5vw,48px) 44px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.06em; color:#6a6a62; border-top:1px solid rgba(255,255,255,0.08);">
+    <a href="index.html" style-hover="color:#5b8cff;">← Back to home</a>
+    <span>© 2026 DAN KIBET</span>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
